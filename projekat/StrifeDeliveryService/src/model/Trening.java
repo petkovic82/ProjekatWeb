@@ -7,8 +7,8 @@ import enumeration.TreningType;
 @XmlRootElement
 public class Trening {
 
-//	private String trenerId;
-//	private String objekatId;
+	private String trenerId;
+	private String objekatId;
 	private String id;
 	private String name;
 	private TreningType type; //grupni personalni u dvoje
@@ -29,20 +29,20 @@ public class Trening {
 		this.description = description;
 	}
 
-	public int getTrenerId() {
+	public String getTrenerId() {
 		return trenerId;
 	}
 
-	public void setTrenerId(int trenerId) {
+	public void setTrenerId(String trenerId) {
 		this.trenerId = trenerId;
 	}
 
 
-	public int getObjekatId() {
+	public String getObjekatId() {
 		return objekatId;
 	}
 
-	public void setObjekatId(int objekatId) {
+	public void setObjekatId(String objekatId) {
 		this.objekatId = objekatId;
 	}
 	

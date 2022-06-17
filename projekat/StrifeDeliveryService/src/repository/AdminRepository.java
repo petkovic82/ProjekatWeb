@@ -15,7 +15,7 @@ public class AdminRepository extends GenericRepository<Admin, AdminRepository>  
 
 	@Override
 	protected String getFileName() {
-		//return "adminData.json";
+		return "adminData.json";
 	}
 
 	@Override

@@ -6,6 +6,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 public enum MembershipStatus{
 	
 	ACTIVE,
-NOTACTIVE
+	NOTACTIVE
 
 }

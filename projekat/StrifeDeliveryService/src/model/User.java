@@ -21,14 +21,14 @@ public class User {
 
 	private UserCategory category; //uloga -nasledjuju ga trener kome dodajes istoriju treninga;
 	// broj sakupljenih bodova, tip kupca, clanarina i poseceni objekti ako je kupac; spisak objekata menadzer
-	//private boolean deleted;
+	/* private boolean deleted;
 	
-//	public boolean isDeleted() {
+	public boolean isDeleted() {
 		return deleted;
 	}
-//	public void setDeleted(boolean deleted) {
+	public void setDeleted(boolean deleted) {
 		this.deleted = deleted;
-	}
+	} */
 	public String getId() {
 		return id;
 	}

@@ -11,26 +11,29 @@ import enumeration.UserCategory;
 @XmlRootElement
 public class Customer extends User {
 
-	private ArrayList<sportsFacility> objekti;
+	private ArrayList<SportsFacility> objekti;
 	private CustomerType customerType;
 	private int points;
 	private String MembershipId;	
 	
 	public Customer(String id, String password, String name, String lastName, Gender gender, Date dateOfBirth,
-			UserCategory category) {
+			UserCategory category) 
+	{
 		super(id, password, name, lastName, gender, dateOfBirth, category);
 		this.setCategory(UserCategory.CUSTOMER);
-		this.objekti = new ArrayList<sportsFacility>();
+		this.objekti = new ArrayList<SportsFacility>();
 		this.customerType = new CustomerType("BRONZE", 0, 0);
 		this.points = 0;
+		
 //izgenerisi u repozitorijumu membershipId kad kreiras i novi membership
 	}
 	
 	public Customer(String id, String password, String name, String lastName, Gender gender, String dateOfBirth,
-			UserCategory category) {
+			UserCategory category) 
+	{
 		super(id, password, name, lastName, gender, dateOfBirth, category);
 		this.setCategory(UserCategory.CUSTOMER);
-		this.objekti = new ArrayList<sportsFacility>();
+		this.objekti = new ArrayList<SportsFacility>();
 		this.customerType = new CustomerType("BRONZE", 0, 0);
 		this.points = 0;
 	}
@@ -39,15 +42,15 @@ public class Customer extends User {
 	{
 		super();
 		this.setCategory(UserCategory.CUSTOMER);
-		this.objekti = new ArrayList<sportsFacility>();
+		this.objekti = new ArrayList<SportsFacility>();
 		this.customerType = new CustomerType("BRONZE", 0, 0);
 		this.points = 0;
 	}
 	
-	public ArrayList<sportsFacility> getSportsFacility() {
+	public ArrayList<SportsFacility> getSportsFacility() {
 		return objekti;
 	}
-	public void setSportsFacility(ArrayList<sportsFacility> objekti) {
+	public void setSportsFacility(ArrayList<SportsFacility> objekti) {
 		this.objekti = objekti;
 	}
 	public int getPoints() {

@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import enumeration.MembershipStatus;
+import enumeration.MembershipType;
 
 @XmlRootElement
 public class Membership{
@@ -25,14 +26,14 @@ public class Membership{
 			String customerId,int brojTermina, MembershipStatus status) {
 		super();
 		this.id = id;
-		this.tip = tip;
+		this.setTip(tip);
 		this.date = date;
 
 /* za mesecnu dodaj 30 dana od datuma, za godisnju 365 dana
 		this.dateAndTime = dateAndTime; */
 		this.price = price;
 		this.korisnikId = customerId;
-		this.brojTermina = brojTermina;
+		this.setBrojTermina(brojTermina);
 		this.status = status;
 	}
 	
@@ -40,13 +41,13 @@ public class Membership{
 		super();
 
 		this.id = null;
-		this.tip = null;
+		this.setTip(null);
 		this.date = null;
 		this.dateAndTime = null;
 		this.price = 1;
 		this.korisnikId = null;
 
-		this.brojTermina = 1;
+		this.setBrojTermina(1);
 		this.status = null;
 	}
 //dodaj preostale getere i setere
@@ -82,9 +83,11 @@ public class Membership{
 
 	public void setPrice() {
 		this.price = 0;
-
+		
+		//broj termina * cena
+/*
 		for (Trening item : items)
-			price += item.getAmount() * item.getTrening().getPrice();
+			price += item.getAmount() * item.getTrening().getPrice();*/
 	}
 
 	public String getCustomerId() {
@@ -101,6 +104,22 @@ public class Membership{
 
 	public void setStatus(MembershipStatus status) {
 		this.status = status;
+	}
+
+	public int getBrojTermina() {
+		return brojTermina;
+	}
+
+	public void setBrojTermina(int brojTermina) {
+		this.brojTermina = brojTermina;
+	}
+
+	public MembershipType getTip() {
+		return tip;
+	}
+
+	public void setTip(MembershipType tip) {
+		this.tip = tip;
 	}
 
 /*	public int generateCancelPoints() {

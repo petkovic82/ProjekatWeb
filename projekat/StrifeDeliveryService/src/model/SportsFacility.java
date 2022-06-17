@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+import enumeration.SportsFacilityCategory;
 import enumeration.SportsFacilityStatus;
 
 @XmlRootElement
@@ -19,7 +20,7 @@ public class SportsFacility{
 	//private Time pocetno i krajnje radno vreme ili TimeSpan
 	//logo objekta slika
 	
-	public sportsFacility(String name, SportsFacilityCategory  type, SportsFacility status, Address location) {
+	public SportsFacility(String name, SportsFacilityCategory  type, SportsFacilityStatus status, Address location) {
 		super();
 		this.name = name;
 		this.category = type;
@@ -28,7 +29,7 @@ public class SportsFacility{
 		//this.products = new ArrayList<String>();
 	}
 	
-	public sportsFacility() {
+	public SportsFacility() {
 		super();
 		this.name = null;
 		this.category = null;
@@ -51,14 +52,14 @@ public class SportsFacility{
 	}
 
 	public void setCategory(String type) {
-		this.category = type;
+		this.category = category;
 	}
 
-	public sportsFacilitygetStatus() {
+	public SportsFacilityStatus sportsFacilitygetStatus() {
 		return status;
 	}
 
-	public void setStatus(sportsFacilityStatus) {
+	public void setStatus(SportsFacilityStatus status) {
 		this.status = status;
 	}
 
@@ -93,7 +94,7 @@ public class SportsFacility{
 
 	@Override
 	public String toString() {
-		return "Objekat [name=" + name + ", type=" + type + ", products=" + products + ", status=" + status
+		return "Objekat [name=" + name + ", type=" + category + ", status=" + status
 				+ ", location=" + location + "]";
 	}
 	

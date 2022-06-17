@@ -20,11 +20,6 @@ public class Manager extends User {
 	}
 
 
-
-	public void setRestaurantId(String restaurantId) {
-		this.restaurantId = restaurantId;
-	}
-	
 	
 	
 	

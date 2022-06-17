@@ -115,7 +115,6 @@ public abstract class GenericRepository<Entity, StorageType extends GenericRepos
 
 		Map<String, Entity> map = gs.fromJson(json, empMapType);
 
-		//System.out.println("Map with: " + map.size());
 
 		return map;
 

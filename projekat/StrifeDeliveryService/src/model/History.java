@@ -1,5 +1,6 @@
 package model;
 
+import java.sql.Date;
 import java.util.ArrayList;
 
 
@@ -9,6 +10,7 @@ public class History {
 	private ArrayList<String> treningIds;
 	private String kupacId;
 	private String trenerId;
+	private boolean deleted;
 	
 	public boolean isDeleted() {
 		return deleted;
@@ -29,7 +31,6 @@ public class History {
 		super();
 		this.treningIds = new ArrayList<String>();
 		this.kupacId = kupacID;
-		this.totalPrice = 0;
 	}
 	
 	public ArrayList<String> getItems() {
