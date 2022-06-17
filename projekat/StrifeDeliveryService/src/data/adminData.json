@@ -2,8 +2,8 @@
   "admin": {
     "id": "admin",
     "password": "admin",
-    "name": "kritina",
-    "lastName": "petkovic",
+    "name": "Tifa",
+    "lastName": "Lockhart",
     "gender": "FEMALE",
     "dateOfBirth": "May 3, 1987 2:00:00 AM",
     "category": "ADMIN",
