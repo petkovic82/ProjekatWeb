@@ -1,0 +1,13 @@
+{
+  "admin": {
+    "id": "admin",
+    "password": "admin",
+    "name": "kritina",
+    "lastName": "petkovic",
+    "gender": "FEMALE",
+    "dateOfBirth": "May 3, 1987 2:00:00 AM",
+    "category": "ADMIN",
+    "deleted": false,
+    "blocked": false
+  }
+}
